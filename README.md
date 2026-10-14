@@ -54,7 +54,7 @@ App 唔需要「螢幕錄影」權限。
 
 ### Code signing
 
-`build.sh` 預設用 `Apple Development: Raymond Lau (89PBA7F683)` 簽名。用固定嘅簽名身份，重新 build 之後先唔使再批一次輔助使用權限。要用其他證書：
+`build.sh` 預設用開發者簽名。用固定嘅簽名身份，重新 build 之後先唔使再批一次輔助使用權限。要用其他證書：
 
 ```bash
 CODESIGN_IDENTITY="Apple Development: 你的名 (XXXXXXXXXX)" ./build.sh
